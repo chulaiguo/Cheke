@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.SNGenerator", "Cheke.SNGenerator\Cheke.SNGenerator.csproj", "{E6F0B40E-DE52-4872-A972-AB8D8341C19F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST.TouchOrder.SNGenerator", "REST.TouchOrder.SNGenerator\REST.TouchOrder.SNGenerator.csproj", "{114CC371-5A3D-44CC-95B1-4E9797E0F63C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedStab.Manager.SNGenerator", "MedStab.Manager.SNGenerator\MedStab.Manager.SNGenerator.csproj", "{E78C45D1-C1A1-4003-8486-F3AE2747BB51}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cheke.SNGenerator\\Cheke.SNGenerator.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Cheke.SNGenerator\\
+		SccProjectUniqueName2 = REST.TouchOrder.SNGenerator\\REST.TouchOrder.SNGenerator.csproj
+		SccProjectName2 = \u0022$/Source\u0020Code/Cheke.RegisterCenter.root/Cheke.RegisterCenter/REST.TouchOrder.SNGenerator\u0022,\u0020FUBAAAAA
+		SccLocalPath2 = REST.TouchOrder.SNGenerator
+		SccProjectUniqueName3 = MedStab.Manager.SNGenerator\\MedStab.Manager.SNGenerator.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = MedStab.Manager.SNGenerator\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E6F0B40E-DE52-4872-A972-AB8D8341C19F}.Release|x86.ActiveCfg = Release|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{114CC371-5A3D-44CC-95B1-4E9797E0F63C}.Release|x86.ActiveCfg = Release|Any CPU
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Debug|x86.ActiveCfg = Debug|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Debug|x86.Build.0 = Debug|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Release|Any CPU.ActiveCfg = Release|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Release|x86.ActiveCfg = Release|x86
+		{E78C45D1-C1A1-4003-8486-F3AE2747BB51}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

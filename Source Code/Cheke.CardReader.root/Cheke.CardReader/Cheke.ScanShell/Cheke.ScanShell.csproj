@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38C8EF4A-063F-46BD-AA59-58284F97A339}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cheke.ScanShell</RootNamespace>
+    <AssemblyName>Cheke.ScanShell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NetScanW, Version=1.0.0.6, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Bin\NetScanW.dll</HintPath>
+    </Reference>
+    <Reference Include="NetScanWex, Version=1.0.9.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Bin\NetScanWex.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CidLibConsts.cs" />
+    <Compile Include="CImageConsts.cs" />
+    <Compile Include="CLicense.cs" />
+    <Compile Include="CMagLibConsts.cs" />
+    <Compile Include="COcrConsts.cs" />
+    <Compile Include="CPassportConsts.cs" />
+    <Compile Include="CSlibConsts.cs" />
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScanBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScanBase.designer.cs">
+      <DependentUpon>FormScanBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScanDLBy2DBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScanDLBy2DBarcode.Designer.cs">
+      <DependentUpon>FormScanDLBy2DBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScanDLByMagnetic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScanDLByMagnetic.Designer.cs">
+      <DependentUpon>FormScanDLByMagnetic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScanDLByOCR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScanDLByOCR.Designer.cs">
+      <DependentUpon>FormScanDLByOCR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScanPassport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScanPassport.designer.cs">
+      <DependentUpon>FormScanPassport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormScanBase.resx">
+      <DependentUpon>FormScanBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScanDLBy2DBarcode.resx">
+      <DependentUpon>FormScanDLBy2DBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScanDLByMagnetic.resx">
+      <DependentUpon>FormScanDLByMagnetic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScanDLByOCR.resx">
+      <DependentUpon>FormScanDLByOCR.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cheke.CardData\Cheke.CardData.csproj">
+      <Project>{E1662B9C-D3F8-44E7-8619-2D870BCD7BF4}</Project>
+      <Name>Cheke.CardData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

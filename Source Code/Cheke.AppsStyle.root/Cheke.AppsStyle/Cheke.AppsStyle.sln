@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsStyle.Data", "AppsStyle.Data\AppsStyle.Data.csproj", "{4AA4AEBB-9A87-49E5-94A4-BD2A209A19A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsStyle.IStyleService", "AppsStyle.IStyleService\AppsStyle.IStyleService.csproj", "{6B382FA1-F31B-4292-A08B-75FD00057E13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsStyle.StyleService", "AppsStyle.StyleService\AppsStyle.StyleService.csproj", "{CD3E8552-C650-4269-B882-EC0F209A9148}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AppsStyle.Data\\AppsStyle.Data.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = AppsStyle.Data\\
+		SccProjectUniqueName2 = AppsStyle.StyleService\\AppsStyle.StyleService.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = AppsStyle.StyleService\\
+		SccProjectUniqueName3 = AppsStyle.IStyleService\\AppsStyle.IStyleService.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = AppsStyle.IStyleService\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AA4AEBB-9A87-49E5-94A4-BD2A209A19A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA4AEBB-9A87-49E5-94A4-BD2A209A19A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA4AEBB-9A87-49E5-94A4-BD2A209A19A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA4AEBB-9A87-49E5-94A4-BD2A209A19A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B382FA1-F31B-4292-A08B-75FD00057E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B382FA1-F31B-4292-A08B-75FD00057E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B382FA1-F31B-4292-A08B-75FD00057E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B382FA1-F31B-4292-A08B-75FD00057E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3E8552-C650-4269-B882-EC0F209A9148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3E8552-C650-4269-B882-EC0F209A9148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3E8552-C650-4269-B882-EC0F209A9148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3E8552-C650-4269-B882-EC0F209A9148}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

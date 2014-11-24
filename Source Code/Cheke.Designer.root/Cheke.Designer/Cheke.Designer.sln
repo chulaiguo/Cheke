@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Designer.Controls", "Cheke.Designer.Controls\Cheke.Designer.Controls.csproj", "{884F512A-BAAA-4BC1-8624-4F2676F4ADCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Designer.Studio", "Cheke.Designer.Studio\Cheke.Designer.Studio.csproj", "{102137CF-8B6E-4EAB-B9EB-515CB92662CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Designer", "Cheke.Designer\Cheke.Designer.csproj", "{7D0F43FA-5D77-483A-8EC3-F05C7A31040A}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cheke.Designer.Controls\\Cheke.Designer.Controls.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Cheke.Designer.Controls\\
+		SccProjectUniqueName2 = Cheke.Designer.Studio\\Cheke.Designer.Studio.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Cheke.Designer.Studio\\
+		SccProjectUniqueName3 = Cheke.Designer\\Cheke.Designer.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Cheke.Designer\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{884F512A-BAAA-4BC1-8624-4F2676F4ADCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884F512A-BAAA-4BC1-8624-4F2676F4ADCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884F512A-BAAA-4BC1-8624-4F2676F4ADCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884F512A-BAAA-4BC1-8624-4F2676F4ADCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102137CF-8B6E-4EAB-B9EB-515CB92662CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102137CF-8B6E-4EAB-B9EB-515CB92662CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102137CF-8B6E-4EAB-B9EB-515CB92662CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102137CF-8B6E-4EAB-B9EB-515CB92662CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D0F43FA-5D77-483A-8EC3-F05C7A31040A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0F43FA-5D77-483A-8EC3-F05C7A31040A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0F43FA-5D77-483A-8EC3-F05C7A31040A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0F43FA-5D77-483A-8EC3-F05C7A31040A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

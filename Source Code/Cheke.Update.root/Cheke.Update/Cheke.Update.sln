@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Update", "Cheke.Update\Cheke.Update.csproj", "{F01592DD-951B-4E7B-893F-37F00A5652A3}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cheke.Update\\Cheke.Update.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Cheke.Update\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F01592DD-951B-4E7B-893F-37F00A5652A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01592DD-951B-4E7B-893F-37F00A5652A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01592DD-951B-4E7B-893F-37F00A5652A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01592DD-951B-4E7B-893F-37F00A5652A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

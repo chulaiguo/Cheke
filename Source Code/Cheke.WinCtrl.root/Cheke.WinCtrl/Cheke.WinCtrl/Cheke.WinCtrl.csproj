@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD3B0C10-112F-427A-8B9D-B3D2398B36E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cheke.WinCtrl</RootNamespace>
+    <AssemblyName>Cheke.WinCtrl</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cheke, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Bin\Cheke.dll</HintPath>
+    </Reference>
+    <Reference Include="Cheke.BusinessEntity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Bin\Cheke.BusinessEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Cheke.Translation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Bin\Cheke.Translation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CheckEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CheckEditEx.designer.cs">
+      <DependentUpon>CheckEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ComboBoxEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ComboBoxEditEx.designer.cs">
+      <DependentUpon>ComboBoxEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CalcEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\CalcEditEx.designer.cs">
+      <DependentUpon>CalcEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ColorEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ColorEditEx.designer.cs">
+      <DependentUpon>ColorEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FontEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\FontEditEx.designer.cs">
+      <DependentUpon>FontEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DateEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\DateEditEx.designer.cs">
+      <DependentUpon>DateEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EditorBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\EditorBase.designer.cs">
+      <DependentUpon>EditorBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LookUpEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\LookUpEditEx.designer.cs">
+      <DependentUpon>LookUpEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MemoEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\MemoEditEx.designer.cs">
+      <DependentUpon>MemoEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MemoExEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\MemoExEditEx.designer.cs">
+      <DependentUpon>MemoExEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PictureEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\PictureEditEx.designer.cs">
+      <DependentUpon>PictureEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\RadioGroupEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\RadioGroupEx.designer.cs">
+      <DependentUpon>RadioGroupEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SpinEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\SpinEditEx.designer.cs">
+      <DependentUpon>SpinEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TextEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\TextEditEx.designer.cs">
+      <DependentUpon>TextEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TimeEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\TimeEditEx.designer.cs">
+      <DependentUpon>TimeEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDuplicateBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDuplicateBase.Designer.cs">
+      <DependentUpon>FormDuplicateBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListDiffBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListDiffBase.designer.cs">
+      <DependentUpon>FormListDiffBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteWarning.Designer.cs">
+      <DependentUpon>FormDeleteWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridCustomize\ColumnCustomize.cs" />
+    <Compile Include="GridCustomize\ColumnCustomizeCollection.cs" />
+    <Compile Include="GridCustomize\ColumnCustomizeSchema.cs" />
+    <Compile Include="GridCustomize\FormColumnCustomize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridCustomize\FormColumnCustomize.Designer.cs">
+      <DependentUpon>FormColumnCustomize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormDatatableItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormDatatableItem.designer.cs">
+      <DependentUpon>FormDatatableItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decoration\GridDatatableDecorator.cs" />
+    <Compile Include="Storage\MachineStorage.cs" />
+    <Compile Include="Utils\ProgressBarCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\ProgressBarCtrl.Designer.cs">
+      <DependentUpon>ProgressBarCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warnings\FormDirtyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warnings\FormDirtyList.Designer.cs">
+      <DependentUpon>FormDirtyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warnings\DirtyDataCtrlContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Warnings\DirtyDataCtrlContainer.Designer.cs">
+      <DependentUpon>DirtyDataCtrlContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warnings\FormDirtyDataWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warnings\FormDirtyDataWarning.Designer.cs">
+      <DependentUpon>FormDirtyDataWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailMapBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailMapBase.Designer.cs">
+      <DependentUpon>FormDetailMapBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewBase.designer.cs">
+      <DependentUpon>FormViewBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decoration\EntitySetting.cs" />
+    <Compile Include="Decoration\GridMasterDetailDecorator.cs" />
+    <Compile Include="Decoration\NavBarControlDecorator.cs" />
+    <Compile Include="Decoration\XtraBarDecorator.cs" />
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMiscBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMiscBase.Designer.cs">
+      <DependentUpon>FormMiscBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPickupBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPickupBase.Designer.cs">
+      <DependentUpon>FormPickupBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatus.designer.cs">
+      <DependentUpon>FormStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormRemoveWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormRemoveWarning.Designer.cs">
+      <DependentUpon>FormRemoveWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormSelectWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormSelectWarning.Designer.cs">
+      <DependentUpon>FormSelectWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormBatchAppend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormBatchAppend.Designer.cs">
+      <DependentUpon>FormBatchAppend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectBase.designer.cs">
+      <DependentUpon>FormSelectBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\BatchEditorEntity.cs" />
+    <Compile Include="FormChildrenSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildrenSwitch.Designer.cs">
+      <DependentUpon>FormChildrenSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailBase.Designer.cs">
+      <DependentUpon>FormDetailBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailEditorBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailEditorBase.Designer.cs">
+      <DependentUpon>FormDetailEditorBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailListBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailListBase.Designer.cs">
+      <DependentUpon>FormDetailListBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainBase.Designer.cs">
+      <DependentUpon>FormMainBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReactiveBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReactiveBase.Designer.cs">
+      <DependentUpon>FormReactiveBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkSearchBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkSearchBase.Designer.cs">
+      <DependentUpon>FormWorkSearchBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormBatchEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormBatchEdit.Designer.cs">
+      <DependentUpon>FormBatchEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormInputNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormInputNumber.Designer.cs">
+      <DependentUpon>FormInputNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlBuddy\GridMenuController.cs" />
+    <Compile Include="GridControlBuddy\GridMenuOptions.cs" />
+    <Compile Include="Login\FormLoginBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FormLoginBase.Designer.cs">
+      <DependentUpon>FormLoginBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StyleStorage.cs" />
+    <Compile Include="StringManager\GridStringManager.cs" />
+    <Compile Include="GridControlBuddy\IAmendEntity.cs" />
+    <Compile Include="GridControlCommand\ConditionsStyleCommand.cs" />
+    <Compile Include="GridControlCommand\GridClipboard.cs" />
+    <Compile Include="GridControlCommand\GridEditCommand.cs" />
+    <Compile Include="GridControlBuddy\FormBatchEditBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControlBuddy\FormBatchEditBase.Designer.cs">
+      <DependentUpon>FormBatchEditBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlCommand\IGridClipboard.cs" />
+    <Compile Include="Common\GridLookUpEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\GridLookUpEditEx.designer.cs">
+      <DependentUpon>GridLookUpEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringManager\LoginStringManager.cs" />
+    <Compile Include="StringManager\FieldTranslator.cs" />
+    <Compile Include="StringManager\NavBarStringManager.cs" />
+    <Compile Include="Properties\GridResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NavBarBuddy\NavBarStyleMenu.cs" />
+    <Compile Include="NavBarBuddy\NavBarMenuController.cs" />
+    <Compile Include="NavBarBuddy\NavBarStyleCommand.cs" />
+    <Compile Include="Common\ButtonEditEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ButtonEditEx.designer.cs">
+      <DependentUpon>ButtonEditEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringManager\UIStringManager.cs" />
+    <Compile Include="Task\TaskBase.cs" />
+    <Compile Include="Utils\FormUtil.cs" />
+    <Compile Include="FormWorkBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkBase.Designer.cs">
+      <DependentUpon>FormWorkBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkEditorBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkEditorBase.Designer.cs">
+      <DependentUpon>FormWorkEditorBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkListBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkListBase.Designer.cs">
+      <DependentUpon>FormWorkListBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FormChangePassword.Designer.cs">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FormRecoverPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FormRecoverPassword.Designer.cs">
+      <DependentUpon>FormRecoverPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControlCommand\GridDataCommand.cs" />
+    <Compile Include="GridControlCommand\IApplyGridStyle.cs" />
+    <Compile Include="GridControlCommand\IRefreshGridViewData.cs" />
+    <Compile Include="GridControlCommand\ISaveGridViewData.cs" />
+    <Compile Include="Decoration\DecoratorBase.cs" />
+    <Compile Include="GridControlCommand\GridExportCommand.cs" />
+    <Compile Include="GridControlCommand\GridLayoutCommand.cs" />
+    <Compile Include="GridControlCommand\GridMenuFacade.cs" />
+    <Compile Include="Decoration\GridControlDecorator.cs">
+    </Compile>
+    <Compile Include="GridControlCommand\GridStyleCommand.cs" />
+    <Compile Include="GridControlBuddy\GridViewBasicMenu.cs" />
+    <Compile Include="GridControlBuddy\GridViewColumnButtonMenu.cs" />
+    <Compile Include="Login\ILogin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBase.designer.cs">
+      <DependentUpon>UserControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\MessageBoxUtil.cs" />
+    <Compile Include="Warnings\DirtyDataCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Warnings\DirtyDataCtrl.Designer.cs">
+      <DependentUpon>DirtyDataCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\FormWizardBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\FormWizardBase.Designer.cs">
+      <DependentUpon>FormWizardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\FormWizardPageBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizard\FormWizardPageBase.Designer.cs">
+      <DependentUpon>FormWizardPageBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormDuplicateBase.resx">
+      <DependentUpon>FormDuplicateBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteWarning.resx">
+      <DependentUpon>FormDeleteWarning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBase.resx">
+      <DependentUpon>UserControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\CheckEditEx.resx">
+      <DependentUpon>CheckEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ComboBoxEditEx.resx">
+      <DependentUpon>ComboBoxEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DateEditEx.resx">
+      <DependentUpon>DateEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\EditorBase.resx">
+      <DependentUpon>EditorBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\LookUpEditEx.resx">
+      <DependentUpon>LookUpEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MemoEditEx.resx">
+      <DependentUpon>MemoEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MemoExEditEx.resx">
+      <DependentUpon>MemoExEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PictureEditEx.resx">
+      <DependentUpon>PictureEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\RadioGroupEx.resx">
+      <DependentUpon>RadioGroupEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SpinEditEx.resx">
+      <DependentUpon>SpinEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\TextEditEx.resx">
+      <DependentUpon>TextEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\TimeEditEx.resx">
+      <DependentUpon>TimeEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildrenSwitch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormChildrenSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDetailBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailEditorBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDetailEditorBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailListBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDetailListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMainBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReactiveBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormReactiveBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorkBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkEditorBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorkEditorBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkListBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorkListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkSearchBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorkSearchBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FormChangePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FormLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FormRecoverPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRecoverPassword.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\CalcEditEx.resx">
+      <DependentUpon>CalcEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ColorEditEx.resx">
+      <DependentUpon>ColorEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FontEditEx.resx">
+      <DependentUpon>FontEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListDiffBase.resx">
+      <DependentUpon>FormListDiffBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridCustomize\FormColumnCustomize.resx">
+      <DependentUpon>FormColumnCustomize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ProgressBarCtrl.resx">
+      <DependentUpon>ProgressBarCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warnings\FormDirtyList.resx">
+      <DependentUpon>FormDirtyList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warnings\DirtyDataCtrlContainer.resx">
+      <DependentUpon>DirtyDataCtrlContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warnings\FormDirtyDataWarning.resx">
+      <DependentUpon>FormDirtyDataWarning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailMapBase.resx">
+      <DependentUpon>FormDetailMapBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewBase.resx">
+      <DependentUpon>FormViewBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMiscBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMiscBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPickupBase.resx">
+      <DependentUpon>FormPickupBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControlBuddy\FormRemoveWarning.resx">
+      <DependentUpon>FormRemoveWarning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControlBuddy\FormSelectWarning.resx">
+      <DependentUpon>FormSelectWarning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControlBuddy\FormBatchAppend.resx">
+      <DependentUpon>FormBatchAppend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectBase.resx">
+      <DependentUpon>FormSelectBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControlBuddy\FormBatchEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBatchEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControlBuddy\FormBatchEditBase.resx">
+      <DependentUpon>FormBatchEditBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\GridLookUpEditEx.resx">
+      <DependentUpon>GridLookUpEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControlBuddy\FormInputNumber.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormInputNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FormLoginBase.resx">
+      <DependentUpon>FormLoginBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\GridResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GridResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ButtonEditEx.resx">
+      <DependentUpon>ButtonEditEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warnings\DirtyDataCtrl.resx">
+      <DependentUpon>DirtyDataCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\FormWizardBase.resx">
+      <DependentUpon>FormWizardBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\FormWizardPageBase.resx">
+      <DependentUpon>FormWizardPageBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\World.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reactive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BatchEdit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BatchAppend.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cheke.ClientSide\Cheke.ClientSide.csproj">
+      <Project>{5636B000-B6DC-42C9-849B-591036077208}</Project>
+      <Name>Cheke.ClientSide</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Closebutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Closebutton.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

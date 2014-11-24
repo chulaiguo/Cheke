@@ -1,0 +1,603 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F3E0045-214C-48D1-8E82-0E4105AC405F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cheke.VirtualKeyboard</RootNamespace>
+    <AssemblyName>Cheke.VirtualKeyboard</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SimpleKeyboardCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleKeyboardCtrl.Designer.cs">
+      <DependentUpon>SimpleKeyboardCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyboardCtrl.Designer.cs">
+      <DependentUpon>KeyboardCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonAlt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonAlt.Designer.cs">
+      <DependentUpon>KeyButtonAlt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonBack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonBack.Designer.cs">
+      <DependentUpon>KeyButtonBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonBase.Designer.cs">
+      <DependentUpon>KeyButtonBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonCapsLock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonCapsLock.Designer.cs">
+      <DependentUpon>KeyButtonCapsLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonChar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonChar.Designer.cs">
+      <DependentUpon>KeyButtonChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonCtrl.Designer.cs">
+      <DependentUpon>KeyButtonCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonDelete.Designer.cs">
+      <DependentUpon>KeyButtonDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonDown.Designer.cs">
+      <DependentUpon>KeyButtonDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonEnd.Designer.cs">
+      <DependentUpon>KeyButtonEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonEnter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonEnter.Designer.cs">
+      <DependentUpon>KeyButtonEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonEsc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonEsc.Designer.cs">
+      <DependentUpon>KeyButtonEsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonHome.Designer.cs">
+      <DependentUpon>KeyButtonHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonInsert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonInsert.Designer.cs">
+      <DependentUpon>KeyButtonInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonLeft.Designer.cs">
+      <DependentUpon>KeyButtonLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonNumber.Designer.cs">
+      <DependentUpon>KeyButtonNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonNumPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonNumPad.Designer.cs">
+      <DependentUpon>KeyButtonNumPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM1.Designer.cs">
+      <DependentUpon>KeyButtonOEM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM2.Designer.cs">
+      <DependentUpon>KeyButtonOEM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM3.Designer.cs">
+      <DependentUpon>KeyButtonOEM3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM4.Designer.cs">
+      <DependentUpon>KeyButtonOEM4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM5.Designer.cs">
+      <DependentUpon>KeyButtonOEM5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM6.Designer.cs">
+      <DependentUpon>KeyButtonOEM6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEM7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEM7.Designer.cs">
+      <DependentUpon>KeyButtonOEM7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEMCOMMA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEMCOMMA.Designer.cs">
+      <DependentUpon>KeyButtonOEMCOMMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEMMINUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEMMINUS.Designer.cs">
+      <DependentUpon>KeyButtonOEMMINUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEMPERIOD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEMPERIOD.Designer.cs">
+      <DependentUpon>KeyButtonOEMPERIOD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonOEMPLUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonOEMPLUS.Designer.cs">
+      <DependentUpon>KeyButtonOEMPLUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonPageDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonPageDown.Designer.cs">
+      <DependentUpon>KeyButtonPageDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonPageUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonPageUp.Designer.cs">
+      <DependentUpon>KeyButtonPageUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonRight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonRight.Designer.cs">
+      <DependentUpon>KeyButtonRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonShift.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonShift.Designer.cs">
+      <DependentUpon>KeyButtonShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonSpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonSpace.Designer.cs">
+      <DependentUpon>KeyButtonSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonTab.Designer.cs">
+      <DependentUpon>KeyButtonTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyButtonUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyButtonUp.Designer.cs">
+      <DependentUpon>KeyButtonUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumPadCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumPadCtrl.Designer.cs">
+      <DependentUpon>NumPadCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="Properties\ResourceNumber.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceNumber.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ResourceChar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceChar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ResourceNumPad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceNumPad.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VirtualKeys.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SimpleKeyboardCtrl.resx">
+      <DependentUpon>SimpleKeyboardCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyboardCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KeyboardCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyButtonAlt.resx">
+      <DependentUpon>KeyButtonAlt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyButtonBase.resx">
+      <DependentUpon>KeyButtonBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyButtonCapsLock.resx">
+      <DependentUpon>KeyButtonCapsLock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyButtonCtrl.resx">
+      <DependentUpon>KeyButtonCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyButtonEnter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KeyButtonEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyButtonShift.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KeyButtonShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumPadCtrl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NumPadCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceNumber.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceNumber.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceChar.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceChar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceNumPad.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceNumPad.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_PLUS.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_COMMA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_MINUS.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_OEM_PERIOD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_SHIFT.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_CONTROL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_MENU.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_CAPITAL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_SPACE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_BACK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_ESCAPE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_RETURN.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_DOWN.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_END.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_HOME.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_INSERT.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_LEFT.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_NEXT.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_PRIOR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_RIGHT.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_UP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_DELETE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VK_TAB.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumLock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPadAdd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPadDecimal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPadDivide.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPadEnter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPadMultiply.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPadSubtract.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsUpdate.Data", "AppsUpdate.Data\AppsUpdate.Data.csproj", "{1D292800-A0F0-406A-AF50-09BC0DB33EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsUpdate.IUpdateService", "AppsUpdate.IUpdateService\AppsUpdate.IUpdateService.csproj", "{FD45DE1E-CFC8-4E7E-8949-423CEEDAEDDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsUpdate.UpdateService", "AppsUpdate.UpdateService\AppsUpdate.UpdateService.csproj", "{98D7BC32-A809-458F-85ED-603656050035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppsUpdate.ClientSide", "AppsUpdate.ClientSide\AppsUpdate.ClientSide.csproj", "{FD5C4737-DE98-4228-9953-AF52F1F858BC}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AppsUpdate.IUpdateService\\AppsUpdate.IUpdateService.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = AppsUpdate.IUpdateService\\
+		SccProjectUniqueName2 = AppsUpdate.UpdateService\\AppsUpdate.UpdateService.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = AppsUpdate.UpdateService\\
+		SccProjectUniqueName3 = AppsUpdate.ClientSide\\AppsUpdate.ClientSide.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = AppsUpdate.ClientSide\\
+		SccProjectUniqueName4 = AppsUpdate.Data\\AppsUpdate.Data.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = AppsUpdate.Data\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D292800-A0F0-406A-AF50-09BC0DB33EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D292800-A0F0-406A-AF50-09BC0DB33EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D292800-A0F0-406A-AF50-09BC0DB33EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D292800-A0F0-406A-AF50-09BC0DB33EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD45DE1E-CFC8-4E7E-8949-423CEEDAEDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD45DE1E-CFC8-4E7E-8949-423CEEDAEDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD45DE1E-CFC8-4E7E-8949-423CEEDAEDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD45DE1E-CFC8-4E7E-8949-423CEEDAEDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D7BC32-A809-458F-85ED-603656050035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D7BC32-A809-458F-85ED-603656050035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D7BC32-A809-458F-85ED-603656050035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D7BC32-A809-458F-85ED-603656050035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5C4737-DE98-4228-9953-AF52F1F858BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5C4737-DE98-4228-9953-AF52F1F858BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5C4737-DE98-4228-9953-AF52F1F858BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5C4737-DE98-4228-9953-AF52F1F858BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

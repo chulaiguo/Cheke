@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Translation", "Cheke.Translation\Cheke.Translation.csproj", "{84F10247-D995-4A03-B03F-F03A89006A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Translation.Manager", "Cheke.Translation.Manager\Cheke.Translation.Manager.csproj", "{E59B5DF5-7F6E-4F44-9625-8A0011D339E5}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cheke.Translation.Manager\\Cheke.Translation.Manager.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Cheke.Translation.Manager\\
+		SccProjectUniqueName2 = Cheke.Translation\\Cheke.Translation.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Cheke.Translation\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84F10247-D995-4A03-B03F-F03A89006A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F10247-D995-4A03-B03F-F03A89006A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F10247-D995-4A03-B03F-F03A89006A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F10247-D995-4A03-B03F-F03A89006A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59B5DF5-7F6E-4F44-9625-8A0011D339E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59B5DF5-7F6E-4F44-9625-8A0011D339E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59B5DF5-7F6E-4F44-9625-8A0011D339E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59B5DF5-7F6E-4F44-9625-8A0011D339E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Modem", "Cheke.Modem\Cheke.Modem.csproj", "{8FFC854D-1475-4AEA-8EB9-AD8FCE39701F}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cheke.Modem\\Cheke.Modem.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Cheke.Modem\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FFC854D-1475-4AEA-8EB9-AD8FCE39701F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFC854D-1475-4AEA-8EB9-AD8FCE39701F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFC854D-1475-4AEA-8EB9-AD8FCE39701F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFC854D-1475-4AEA-8EB9-AD8FCE39701F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
