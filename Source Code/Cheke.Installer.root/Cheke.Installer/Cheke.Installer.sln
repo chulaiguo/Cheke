@@ -1,16 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.Installer", "Cheke.Installer\Cheke.Installer.csproj", "{9B0FBA7C-8C65-4241-BFCE-B3DCE3A082A2}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 2
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Cheke.Installer\\Cheke.Installer.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = Cheke.Installer\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

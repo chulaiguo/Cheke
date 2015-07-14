@@ -94,6 +94,39 @@ namespace Cheke.Installer
             }
         }
 
+        public void ExecuteSqlByFile(string sqlFile, string databaseConnectionString)
+        {
+            if (!File.Exists(sqlFile))
+                return;
+
+            string sql = string.Empty;
+            string[] lines = File.ReadAllLines(sqlFile);
+            foreach (string line in lines)
+            {
+                if (string.IsNullOrEmpty(line))
+                    continue;
+
+                if (line.StartsWith("/*"))
+                    continue;
+
+                if (line.StartsWith("create database", StringComparison.OrdinalIgnoreCase)
+                    || line.StartsWith("use", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                if (string.Compare(line, "go", StringComparison.OrdinalIgnoreCase) != 0)
+                {
+                    sql += line.TrimEnd('\r', '\n');
+                    continue;
+                }
+
+                if (string.IsNullOrEmpty(sql))
+                    continue;
+
+                ExecuteNonQuery(sql, databaseConnectionString);
+                sql = string.Empty;
+            }
+        }
+
         public void CreateLoginUser()
         {
             StringBuilder builder = new StringBuilder();
