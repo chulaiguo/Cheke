@@ -57,7 +57,7 @@ namespace Cheke.WinCtrl.Common
                 this._isDirty = value;
                 if (this.panel1.Controls.Count > 0)
                 {
-                    this.panel1.Controls[0].BackColor = this._isDirty ? Color.LightYellow : Color.Empty;
+                    this.panel1.Controls[0].BackColor = this._isDirty ? FormMainBase.ItemDirtyColor : Color.Empty;
                 }
             }
         }

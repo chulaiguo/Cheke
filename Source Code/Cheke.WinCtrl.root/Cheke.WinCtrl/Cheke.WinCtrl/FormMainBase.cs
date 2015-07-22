@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using Cheke.BusinessEntity;
@@ -16,6 +17,10 @@ namespace Cheke.WinCtrl
 {
     public partial class FormMainBase : FormBase
     {
+        public static Color ItemDirtyColor = Color.BurlyWood;
+        public static Color ListNewColor = Color.DarkKhaki;
+        public static Color ListDirtyColor = Color.BurlyWood;
+
         private static FormMainBase _Instance = null;
         private long _beginTickCount = 0;
         private DateTime _serviceTime = DateTime.Now;

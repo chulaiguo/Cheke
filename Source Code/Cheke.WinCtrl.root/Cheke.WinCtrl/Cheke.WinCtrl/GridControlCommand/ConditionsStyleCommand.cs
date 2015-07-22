@@ -9,9 +9,6 @@ namespace Cheke.WinCtrl.GridControlCommand
 {
     public static class ConditionsStyleCommand
     {
-        public static Color DirtyDataColor = Color.BurlyWood;
-        public static Color NewDataColor = Color.DarkKhaki;
-
         public static void AddConditionsColumns(GridView view)
         {
             GridColumn colIsDirty = new GridColumn();
@@ -35,12 +32,12 @@ namespace Cheke.WinCtrl.GridControlCommand
         {
             StyleFormatCondition cn = new StyleFormatCondition(FormatConditionEnum.Equal, view.Columns["IsSelfDirty"], null, true);
             cn.ApplyToRow = true;
-            cn.Appearance.BackColor = ConditionsStyleCommand.DirtyDataColor;
+            cn.Appearance.BackColor = FormMainBase.ListDirtyColor;
             view.FormatConditions.Add(cn);
 
             cn = new StyleFormatCondition(FormatConditionEnum.Equal, view.Columns["IsNew"], null, true);
             cn.ApplyToRow = true;
-            cn.Appearance.BackColor = ConditionsStyleCommand.NewDataColor;
+            cn.Appearance.BackColor = FormMainBase.ListNewColor;
             view.FormatConditions.Add(cn);
         }
 
@@ -72,7 +69,7 @@ namespace Cheke.WinCtrl.GridControlCommand
                 string dirtyColorName = storage.Read() as string;
                 if (!string.IsNullOrEmpty(dirtyColorName))
                 {
-                    DirtyDataColor = Color.FromName(dirtyColorName);
+                    FormMainBase.ListDirtyColor = Color.FromName(dirtyColorName);
                 }
                 storage.Dispose();
             }
@@ -84,7 +81,7 @@ namespace Cheke.WinCtrl.GridControlCommand
                 string newColorName = storage.Read() as string;
                 if (!string.IsNullOrEmpty(newColorName))
                 {
-                    NewDataColor = Color.FromName(newColorName);
+                    FormMainBase.ListNewColor = Color.FromName(newColorName);
                 }
                 storage.Dispose();
             }
