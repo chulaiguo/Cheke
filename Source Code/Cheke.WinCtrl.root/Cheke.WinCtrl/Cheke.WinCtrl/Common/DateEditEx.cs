@@ -27,6 +27,7 @@ namespace Cheke.WinCtrl.Common
             this.dateEdit1 = new DateEdit();
             base.AddEditor(this.dateEdit1);
             this.RegisterEvents();
+            this.dateEdit1.Properties.NullDate = new DateTime(9999, 1, 1);
 
             InitializeComponent();
         }

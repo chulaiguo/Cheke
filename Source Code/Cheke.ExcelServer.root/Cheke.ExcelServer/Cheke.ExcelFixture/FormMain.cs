@@ -29,8 +29,11 @@ namespace Cheke.ExcelFixture
                 byte[] data = File.ReadAllBytes(dlg.FileName);
 
                 ExcelReader rd = new ExcelReader();
-                DataTable table = rd.LoadIntoDataTable(data, "稳定性试验结果", false);
-                MessageBox.Show(table.Rows.Count.ToString());
+                DataSet dataset = rd.LoadIntoDataSet(data, false);
+                if (dataset.Tables.Count > 0)
+                {
+                    MessageBox.Show(dataset.Tables[0].Rows.Count.ToString());
+                }
             }
             catch (Exception ex)
             {
