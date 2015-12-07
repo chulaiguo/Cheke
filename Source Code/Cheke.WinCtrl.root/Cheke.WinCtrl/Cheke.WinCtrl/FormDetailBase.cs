@@ -351,14 +351,32 @@ namespace Cheke.WinCtrl
 
         protected bool ShowNewButton
         {
-            get { return this.btnNew.Visible; }
-            set { this.btnNew.Visible = value; }
+            get
+            {
+                return this.btnNew.Visible && this.AddNewable;
+            }
+            set
+            {
+                if (!this.AddNewable)
+                    return;
+
+                this.btnNew.Visible = value;
+            }
         }
 
         protected bool ShowDeleteButton
         {
-            get { return this.btnDelete.Visible; }
-            set { this.btnDelete.Visible = value; }
+            get
+            {
+                return this.btnDelete.Visible && this.Deletable;
+            }
+            set
+            {
+                if (!this.Deletable)
+                    return;
+
+                this.btnDelete.Visible = value;
+            }
         }
 
         protected DevExpress.XtraEditors.SimpleButton SaveButton
