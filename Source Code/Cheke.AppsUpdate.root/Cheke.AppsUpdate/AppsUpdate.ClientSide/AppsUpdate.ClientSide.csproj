@@ -43,11 +43,11 @@
   <ItemGroup>
     <Reference Include="AppsUpdate.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Bin\AppsUpdate.Data.dll</HintPath>
+      <HintPath>..\AppsUpdate.Data\bin\Debug\AppsUpdate.Data.dll</HintPath>
     </Reference>
     <Reference Include="AppsUpdate.IUpdateService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Bin\AppsUpdate.IUpdateService.dll</HintPath>
+      <HintPath>..\AppsUpdate.IUpdateService\obj\Debug\AppsUpdate.IUpdateService.dll</HintPath>
     </Reference>
     <Reference Include="Cheke.ClassFactory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

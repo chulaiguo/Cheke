@@ -52,7 +52,7 @@
     <Compile Include="ServiceBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AppsStyle.Data.root\AppsStyle.Data\AppsStyle.Data\AppsStyle.Data.csproj">
+    <ProjectReference Include="..\AppsStyle.Data\AppsStyle.Data.csproj">
       <Project>{4AA4AEBB-9A87-49E5-94A4-BD2A209A19A3}</Project>
       <Name>AppsStyle.Data</Name>
     </ProjectReference>

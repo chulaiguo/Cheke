@@ -43,7 +43,7 @@
   <ItemGroup>
     <Reference Include="AppsUpdate.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Bin\AppsUpdate.Data.dll</HintPath>
+      <HintPath>..\AppsUpdate.Data\bin\Debug\AppsUpdate.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

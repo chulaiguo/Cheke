@@ -41,10 +41,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AppsUpdate.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Bin\AppsUpdate.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -57,13 +53,17 @@
     <Compile Include="ServiceBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AppsUpdate.IUpdateService\AppsUpdate.IUpdateService.csproj">
-      <Project>{FD45DE1E-CFC8-4E7E-8949-423CEEDAEDDF}</Project>
-      <Name>AppsUpdate.IUpdateService</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\AppsUpdate.Data\AppsUpdate.Data.csproj">
+      <Project>{1d292800-a0f0-406a-af50-09bc0db33ea6}</Project>
+      <Name>AppsUpdate.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppsUpdate.IUpdateService\AppsUpdate.IUpdateService.csproj">
+      <Project>{fd45de1e-cfc8-4e7e-8949-423ceedaeddf}</Project>
+      <Name>AppsUpdate.IUpdateService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
