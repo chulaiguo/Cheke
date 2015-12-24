@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0101BB4-9E47-49D6-9B5E-70995174F7D0}</ProjectGuid>
+    <ProjectGuid>{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cheke.WebAPIWrapper</RootNamespace>
-    <AssemblyName>Cheke.WebAPIWrapper</AssemblyName>
+    <RootNamespace>Cheke.UpdateServiceWrapper</RootNamespace>
+    <AssemblyName>Cheke.UpdateServiceWrapper</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,10 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StyleServiceWrapper.cs" />
-    <Compile Include="Utils.cs" />
-    <Compile Include="UpdateServiceWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateDirectory.cs" />
+    <Compile Include="UpdateDirectoryCollection.cs" />
+    <Compile Include="UpdateInfo.cs" />
+    <Compile Include="UpdateInfoCollection.cs" />
+    <Compile Include="UpdateWrapper.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

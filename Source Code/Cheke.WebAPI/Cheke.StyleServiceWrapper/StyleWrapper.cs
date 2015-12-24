@@ -3,9 +3,9 @@ using System.Collections;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Cheke.WebAPIWrapper
+namespace Cheke.StyleServiceWrapper
 {
-	public static class StyleServiceWrapper
+	public static class StyleWrapper
     {
 		public static Hashtable GetStyleFiles(string projectName, string userId)
         {

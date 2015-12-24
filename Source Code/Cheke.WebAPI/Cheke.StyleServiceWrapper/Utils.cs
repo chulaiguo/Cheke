@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace Cheke.WebAPIWrapper
+namespace Cheke.StyleServiceWrapper
 {
 	internal static class Utils
     {

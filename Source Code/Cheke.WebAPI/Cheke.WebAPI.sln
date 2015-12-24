@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.WebAPI", "Cheke.WebAPI\Cheke.WebAPI.csproj", "{414EC225-3062-4F7B-98BA-DC97C777B8F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.WebAPIWrapper", "Cheke.WebAPIWrapper\Cheke.WebAPIWrapper.csproj", "{A0101BB4-9E47-49D6-9B5E-70995174F7D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.UpdateServiceWrapper", "Cheke.UpdateServiceWrapper\Cheke.UpdateServiceWrapper.csproj", "{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.StyleServiceWrapper", "Cheke.StyleServiceWrapper\Cheke.StyleServiceWrapper.csproj", "{05A581D9-1192-48E2-BB90-DF3375B93A2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{414EC225-3062-4F7B-98BA-DC97C777B8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{414EC225-3062-4F7B-98BA-DC97C777B8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{414EC225-3062-4F7B-98BA-DC97C777B8F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0101BB4-9E47-49D6-9B5E-70995174F7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0101BB4-9E47-49D6-9B5E-70995174F7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0101BB4-9E47-49D6-9B5E-70995174F7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0101BB4-9E47-49D6-9B5E-70995174F7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A581D9-1192-48E2-BB90-DF3375B93A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A581D9-1192-48E2-BB90-DF3375B93A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A581D9-1192-48E2-BB90-DF3375B93A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A581D9-1192-48E2-BB90-DF3375B93A2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

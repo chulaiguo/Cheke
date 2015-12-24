@@ -1,9 +1,9 @@
 using System;
 using System.Net.Http;
 
-namespace Cheke.WebAPIWrapper
+namespace Cheke.UpdateServiceWrapper
 {
-	public static class UpdateServiceWrapper
+	public static class UpdateWrapper
     {
 		public static string[] GetUpdateInfo(string projectName)
 		{

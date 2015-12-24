@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Cheke.WebAPIWrapper")]
+[assembly: AssemblyTitle("Cheke.StyleServiceWrapper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Cheke.WebAPIWrapper")]
+[assembly: AssemblyProduct("Cheke.StyleServiceWrapper")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a0101bb4-9e47-49d6-9b5e-70995174f7d0")]
+[assembly: Guid("05a581d9-1192-48e2-bb90-df3375b93a2d")]
 
 // Version information for an assembly consists of the following four values:
 //
