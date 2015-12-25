@@ -7,8 +7,8 @@
     <ProjectGuid>{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cheke.UpdateServiceWrapper</RootNamespace>
-    <AssemblyName>Cheke.UpdateServiceWrapper</AssemblyName>
+    <RootNamespace>Cheke.UpdateWrapper</RootNamespace>
+    <AssemblyName>Cheke.UpdateWrapper</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,7 +44,7 @@
     <Compile Include="UpdateDirectoryCollection.cs" />
     <Compile Include="UpdateInfo.cs" />
     <Compile Include="UpdateInfoCollection.cs" />
-    <Compile Include="UpdateWrapper.cs" />
+    <Compile Include="APIWrapper.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

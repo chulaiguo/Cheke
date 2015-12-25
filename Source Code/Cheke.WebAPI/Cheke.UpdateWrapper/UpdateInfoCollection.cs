@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace Cheke.UpdateServiceWrapper
+namespace Cheke.UpdateWrapper
 {
     internal class UpdateInfoCollection : CollectionBase
     {

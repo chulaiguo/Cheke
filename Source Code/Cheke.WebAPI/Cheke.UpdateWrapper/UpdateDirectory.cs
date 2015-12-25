@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace Cheke.UpdateServiceWrapper
+namespace Cheke.UpdateWrapper
 {
     public class UpdateDirectory
     {
@@ -60,7 +60,7 @@ namespace Cheke.UpdateServiceWrapper
         {
             UpdateInfoCollection retList = new UpdateInfoCollection();
 
-            string[] list = UpdateWrapper.GetUpdateInfo(this.Server);
+            string[] list = APIWrapper.GetUpdateInfo(this.Server);
             if (list != null)
             {
                 foreach (string item in list)
@@ -107,7 +107,7 @@ namespace Cheke.UpdateServiceWrapper
                 }
                 else
                 {
-                    buffer = UpdateWrapper.GetUpdateFile(this.Server, item.FileName);
+                    buffer = APIWrapper.GetUpdateFile(this.Server, item.FileName);
                 }
 
                 if (buffer != null)

@@ -3,9 +3,9 @@ using System.Collections;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Cheke.StyleServiceWrapper
+namespace Cheke.StyleWrapper
 {
-	public static class StyleWrapper
+	public static class APIWrapper
     {
 		public static Hashtable GetStyleFiles(string projectName, string userId)
         {
@@ -13,9 +13,14 @@ namespace Cheke.StyleServiceWrapper
 
 			HttpClient client = new HttpClient();
 			client.BaseAddress = new Uri(string.Format("{0}/StyleService/", baseAddress.TrimEnd('/')));
+            HttpContent content = new StringContent(string.Format("{0}|{1}", projectName, userId));
 
-			HttpResponseMessage res = client.GetAsync(string.Format("GetStyleFiles/{0}?userId={1}", projectName, userId)).Result;
-			if (!res.IsSuccessStatusCode)
+            HttpResponseMessage res = client.PostAsync("GetStyleFiles", content).Result;
+            if (res.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                throw new Exception("The remote server returned an error: (404) Not Found");
+            }
+            if (!res.IsSuccessStatusCode)
 			{
 				throw Utils.DeserializeException(res.Content.ReadAsByteArrayAsync().Result);
 			}
@@ -32,10 +37,15 @@ namespace Cheke.StyleServiceWrapper
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("image/jpg"));
 
             Hashtable table = new Hashtable();
-            table.Add(new string[] {userId, fileName}, data);
+            table.Add(new string[] { projectName, userId, fileName}, data);
             HttpContent content = new ByteArrayContent(Utils.CompressObject(table));
 
-            HttpResponseMessage res = client.PostAsync(string.Format("AddStyleFile/{0}", projectName), content).Result;
+            HttpResponseMessage res = client.PostAsync("AddStyleFile", content).Result;
+            if (res.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                throw new Exception("The remote server returned an error: (404) Not Found");
+            }
+
             if (!res.IsSuccessStatusCode)
             {
                 throw Utils.DeserializeException(res.Content.ReadAsByteArrayAsync().Result);
@@ -48,8 +58,14 @@ namespace Cheke.StyleServiceWrapper
 
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(string.Format("{0}/StyleService/", baseAddress.TrimEnd('/')));
+            HttpContent content = new StringContent(string.Format("{0}|{1}|{2}", projectName, userId, fileName));
 
-            HttpResponseMessage res = client.GetAsync(string.Format("DeleteStyleFile/{0}?userId={1}&fileName={2}", projectName, userId, fileName)).Result;
+            HttpResponseMessage res = client.PostAsync("DeleteStyleFile", content).Result;
+            if (res.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                throw new Exception("The remote server returned an error: (404) Not Found");
+            }
+
             if (!res.IsSuccessStatusCode)
             {
                 throw Utils.DeserializeException(res.Content.ReadAsByteArrayAsync().Result);

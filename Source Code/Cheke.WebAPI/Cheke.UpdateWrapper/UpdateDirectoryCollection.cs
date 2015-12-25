@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace Cheke.UpdateServiceWrapper
+namespace Cheke.UpdateWrapper
 {
     public class UpdateDirectoryCollection : CollectionBase
     {

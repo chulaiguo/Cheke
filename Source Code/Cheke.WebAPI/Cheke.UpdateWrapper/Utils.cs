@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace Cheke.UpdateServiceWrapper
+namespace Cheke.UpdateWrapper
 {
 	internal static class Utils
     {

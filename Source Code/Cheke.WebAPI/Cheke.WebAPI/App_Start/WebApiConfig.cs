@@ -16,8 +16,8 @@ namespace Cheke.WebAPI
 
             config.Routes.MapHttpRoute(
              name: "DefaultApi",
-             routeTemplate: "api/{controller}/{action}/{projectName}",
-             defaults: new { projectName = RouteParameter.Optional }
+             routeTemplate: "api/{controller}/{action}",
+             defaults: new { action = RouteParameter.Optional }
          );
         }
     }

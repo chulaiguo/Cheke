@@ -11,11 +11,20 @@ namespace Cheke.WebAPI.Controllers
 {
     public class StyleServiceController : ApiController
     {
-        [HttpGet]
-        public HttpResponseMessage GetStyleFiles(string projectName, string userId)
+        [HttpPost]
+        public HttpResponseMessage GetStyleFiles()
         {
             try
             {
+                string projectName = string.Empty;
+                string userId = string.Empty;
+                string[] splits = this.Request.Content.ReadAsStringAsync().Result.Split('|');
+                if (splits.Length >= 2)
+                {
+                    projectName = splits[0];
+                    userId = splits[1];
+                }
+
                 Hashtable table = new Hashtable();
 
                 string rootPath = ConfigurationManager.AppSettings[projectName];
@@ -51,25 +60,28 @@ namespace Cheke.WebAPI.Controllers
         }
 
         [HttpPost]
-        public HttpResponseMessage AddStyleFile(string projectName)
+        public HttpResponseMessage AddStyleFile()
         {
             try
             {
-                string rootPath = ConfigurationManager.AppSettings[projectName];
-
                 byte[] token = this.Request.Content.ReadAsByteArrayAsync().Result;
                 Hashtable table = Infrastructure.Utils.DecompressObject(token) as Hashtable;
-                if (table != null && !string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
+                if (table != null)
                 {
                     foreach (DictionaryEntry pair in table)
                     {
                         string[] key = pair.Key as string[];
                         byte[] data = pair.Value as byte[];
-                        if(key == null || key.Length < 2 || data == null)
+                        if(key == null || key.Length < 3 || data == null)
                             continue;
 
-                        string userId = key[0];
-                        string fileName = key[1];
+                        string projectName = key[0];
+                        string userId = key[1];
+                        string fileName = key[2];
+
+                        string rootPath = ConfigurationManager.AppSettings[projectName];
+                        if (string.IsNullOrEmpty(rootPath) || !Directory.Exists(rootPath))
+                            continue;
 
                         string userPath = string.Format(@"{0}\{1}", rootPath, userId);
                         if (!Directory.Exists(userPath))
@@ -97,11 +109,22 @@ namespace Cheke.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
-        public HttpResponseMessage DeleteStyleFile(string projectName, string userId, string fileName)
+        [HttpPost]
+        public HttpResponseMessage DeleteStyleFile()
         {
             try
             {
+                string projectName = string.Empty;
+                string userId = string.Empty;
+                string fileName = string.Empty;
+                string[] splits = this.Request.Content.ReadAsStringAsync().Result.Split('|');
+                if (splits.Length >= 3)
+                {
+                    projectName = splits[0];
+                    userId = splits[1];
+                    fileName = splits[2];
+                }
+
                 string rootPath = ConfigurationManager.AppSettings[projectName];
                 if (!string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
                 {

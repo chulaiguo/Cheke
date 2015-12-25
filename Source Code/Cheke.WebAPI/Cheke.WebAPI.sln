@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.WebAPI", "Cheke.WebAPI\Cheke.WebAPI.csproj", "{414EC225-3062-4F7B-98BA-DC97C777B8F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.UpdateServiceWrapper", "Cheke.UpdateServiceWrapper\Cheke.UpdateServiceWrapper.csproj", "{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.UpdateWrapper", "Cheke.UpdateWrapper\Cheke.UpdateWrapper.csproj", "{EDB85F9F-BD18-43B9-86EE-DB20882CADB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.StyleServiceWrapper", "Cheke.StyleServiceWrapper\Cheke.StyleServiceWrapper.csproj", "{05A581D9-1192-48E2-BB90-DF3375B93A2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheke.StyleWrapper", "Cheke.StyleWrapper\Cheke.StyleWrapper.csproj", "{05A581D9-1192-48E2-BB90-DF3375B93A2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

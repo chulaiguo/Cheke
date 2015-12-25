@@ -1,4 +1,4 @@
-namespace Cheke.UpdateServiceWrapper
+namespace Cheke.UpdateWrapper
 {
     internal class UpdateInfo
     {

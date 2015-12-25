@@ -9,11 +9,13 @@ namespace Cheke.WebAPI.Controllers
 {
     public class UpdateServiceController : ApiController
     {
-        [HttpGet]
-        public HttpResponseMessage GetUpdateInfo(string projectName)
+        [HttpPost]
+        public HttpResponseMessage GetUpdateInfo()
         {
             try
             {
+                string projectName = this.Request.Content.ReadAsStringAsync().Result;
+
                 StringBuilder builder = new StringBuilder();
                 string rootPath = System.Configuration.ConfigurationManager.AppSettings[projectName];
                 if (!string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
@@ -36,11 +38,20 @@ namespace Cheke.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
-        public HttpResponseMessage GetUpdateFile(string projectName, string fileName)
+        [HttpPost]
+        public HttpResponseMessage GetUpdateFile()
         {
             try
             {
+                string projectName = string.Empty;
+                string fileName = string.Empty;
+                string[] splits = this.Request.Content.ReadAsStringAsync().Result.Split('|');
+                if (splits.Length >= 2)
+                {
+                    projectName = splits[0];
+                    fileName = splits[1];
+                }
+
                 byte[] data = null;
 
                 string rootPath = System.Configuration.ConfigurationManager.AppSettings[projectName];
