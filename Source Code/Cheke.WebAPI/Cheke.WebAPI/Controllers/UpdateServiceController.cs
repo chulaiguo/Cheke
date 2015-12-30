@@ -17,7 +17,7 @@ namespace Cheke.WebAPI.Controllers
                 string projectName = this.Request.Content.ReadAsStringAsync().Result;
 
                 StringBuilder builder = new StringBuilder();
-                string rootPath = System.Configuration.ConfigurationManager.AppSettings[projectName];
+                string rootPath = System.Web.Hosting.HostingEnvironment.MapPath(string.Format("~/{0}", projectName));
                 if (!string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
                 { 
                     DirectoryInfo di = new DirectoryInfo(rootPath);
@@ -54,7 +54,7 @@ namespace Cheke.WebAPI.Controllers
 
                 byte[] data = null;
 
-                string rootPath = System.Configuration.ConfigurationManager.AppSettings[projectName];
+                string rootPath = System.Web.Hosting.HostingEnvironment.MapPath(string.Format("~/{0}", projectName));
                 if (!string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
                 {
                     string filePath = string.Format(@"{0}\{1}", rootPath, fileName);

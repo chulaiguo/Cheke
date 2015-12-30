@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -27,7 +26,7 @@ namespace Cheke.WebAPI.Controllers
 
                 Hashtable table = new Hashtable();
 
-                string rootPath = ConfigurationManager.AppSettings[projectName];
+                string rootPath = System.Web.Hosting.HostingEnvironment.MapPath(string.Format("~/{0}", projectName));
                 if (!string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
                 {
                     string userPath = string.Format(@"{0}\{1}", rootPath, userId);
@@ -79,7 +78,7 @@ namespace Cheke.WebAPI.Controllers
                         string userId = key[1];
                         string fileName = key[2];
 
-                        string rootPath = ConfigurationManager.AppSettings[projectName];
+                        string rootPath = System.Web.Hosting.HostingEnvironment.MapPath(string.Format("~/{0}", projectName));
                         if (string.IsNullOrEmpty(rootPath) || !Directory.Exists(rootPath))
                             continue;
 
@@ -125,7 +124,7 @@ namespace Cheke.WebAPI.Controllers
                     fileName = splits[2];
                 }
 
-                string rootPath = ConfigurationManager.AppSettings[projectName];
+                string rootPath = System.Web.Hosting.HostingEnvironment.MapPath(string.Format("~/{0}", projectName));
                 if (!string.IsNullOrEmpty(rootPath) && Directory.Exists(rootPath))
                 {
                     string userPath = string.Format(@"{0}\{1}", rootPath, userId);
